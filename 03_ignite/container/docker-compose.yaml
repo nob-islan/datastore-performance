@@ -3,4 +3,4 @@ services:
     container_name: ignite
     image: apacheignite/ignite:2.17.0
     ports:
-      - 10800:10800
+      - 10803:10800

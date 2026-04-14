@@ -1,0 +1,25 @@
+package nob.example.easyapp.domain.entity;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+/**
+ * usersテーブルのentityクラスです。
+ *
+ * @author nob
+ */
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+public class Users {
+
+    /** ユーザID */
+    private String id;
+
+    /** ユーザ名 */
+    private String name;
+
+    /** パスワード */
+    private String password;
+}
