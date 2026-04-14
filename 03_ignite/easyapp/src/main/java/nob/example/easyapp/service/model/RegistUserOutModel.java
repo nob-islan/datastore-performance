@@ -3,9 +3,9 @@ package nob.example.easyapp.service.model;
 /**
  * ユーザ登録処理向け出力モデルです。
  * 
- * @param result 登録成否
+ * @param id 発行した管理ID
  * 
  * @author nob
  */
-public record RegistUserOutModel(Boolean result) {
+public record RegistUserOutModel(String id) {
 }

@@ -42,8 +42,9 @@ public class UserServiceImpl implements UserService {
     @Override
     public RegistUserOutModel regist(RegistUserInModel inModel) {
 
-        usersRepository.save(new Users(UUID.randomUUID().toString(), inModel.name(), inModel.password()));
+        String id = UUID.randomUUID().toString();
+        usersRepository.save(new Users(id, inModel.name(), inModel.password()));
 
-        return new RegistUserOutModel(true);
+        return new RegistUserOutModel(id);
     }
 }

@@ -3,9 +3,9 @@ package nob.example.easyapp.controller.model;
 /**
  * ユーザ登録処理向けレスポンスモデルです。
  * 
- * @param result 登録成否
+ * @param id 発行した管理ID
  * 
  * @author nob
  */
-public record RegistUserResponse(Boolean result) {
+public record RegistUserResponse(String id) {
 }
