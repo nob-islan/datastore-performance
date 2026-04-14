@@ -26,7 +26,8 @@
         "vscjava.vscode-java-pack",
         "vmware.vscode-boot-dev-pack",
         "vscjava.vscode-lombok",
-        "esbenp.prettier-vscode"
+        "esbenp.prettier-vscode",
+        "henry-huang.http-forge"
       ]
     }
   }

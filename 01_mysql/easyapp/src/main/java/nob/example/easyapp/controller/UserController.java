@@ -55,6 +55,6 @@ public class UserController {
     RegistUserResponse regist(@RequestBody RegistUserRequest request) {
 
         return new RegistUserResponse(
-                userService.regist(new RegistUserInModel(request.name(), request.password())).result());
+                userService.regist(new RegistUserInModel(request.name(), request.password())).id());
     }
 }
