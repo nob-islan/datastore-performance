@@ -1,5 +1,5 @@
 {
-  "name": "01 Oracle",
+  "name": "Datasource performance",
   "image": "mcr.microsoft.com/devcontainers/java:25-bookworm",
   "features": {
     // "ghcr.io/devcontainers/features/java:1": {
