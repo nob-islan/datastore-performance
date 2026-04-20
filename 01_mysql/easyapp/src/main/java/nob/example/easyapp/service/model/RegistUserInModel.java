@@ -3,8 +3,8 @@ package nob.example.easyapp.service.model;
 /**
  * ユーザ登録処理向け入力モデルです。
  * 
- * @param name     ユーザ名
- * @param password パスワード
+ * @param name ユーザ名
+ * @param age  年齢
  * 
  * @author nob
  */

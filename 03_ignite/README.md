@@ -6,10 +6,10 @@ Igniteにのみデータを投入します。
 
 ```shell
 # ユーザ登録
-curl -X POST -H 'Content-Type: application/json' -d '{"name": "nob", "password": "passwd"}' localhost:8083/api/v1/user
+curl -X POST -H 'Content-Type: application/json' -d '{"name": "nob", "age": 13}' localhost:8083/api/v1/user
 
 # ユーザ検索
-curl -X GET localhost:8083/api/v1/user?id=3d33c6cb-2a8f-4c9f-8c6d-74462750c9ba
+curl -X GET localhost:8083/api/v1/user?id=a186394a-83d5-40ed-97a3-e488b5797e13
 ```
 
 ## Ignite
@@ -26,6 +26,6 @@ docker exec -it ignite /opt/ignite/apache-ignite/bin/sqlline.sh --verbose=true -
 CREATE TABLE IF NOT EXISTS users (
     id varchar(36) PRIMARY KEY
     , name varchar(8)
-    , password varchar(32)
+    , age int
 );
 ```

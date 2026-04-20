@@ -48,7 +48,7 @@ public class UsersRepositoryImpl implements UsersRepository {
                 .into(UsersDynamicSqlSupport.users)
                 .map(UsersDynamicSqlSupport.id).toProperty("id")
                 .map(UsersDynamicSqlSupport.name).toProperty("name")
-                .map(UsersDynamicSqlSupport.password).toProperty("password")
+                .map(UsersDynamicSqlSupport.age).toProperty("age")
                 .build()
                 .render(RenderingStrategies.MYBATIS3);
 

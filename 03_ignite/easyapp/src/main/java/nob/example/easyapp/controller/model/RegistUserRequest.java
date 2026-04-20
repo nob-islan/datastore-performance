@@ -8,5 +8,5 @@ package nob.example.easyapp.controller.model;
  * 
  * @author nob
  */
-public record RegistUserRequest(String name, String password) {
+public record RegistUserRequest(String name, Integer age) {
 }

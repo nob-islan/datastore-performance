@@ -31,7 +31,7 @@ public interface UsersMapper {
     @Results(id = "usersResult", value = {
             @Result(column = "id", property = "id"),
             @Result(column = "name", property = "name"),
-            @Result(column = "password", property = "password"),
+            @Result(column = "age", property = "age"),
     })
     List<Users> select(SelectStatementProvider selectStatement);
 
