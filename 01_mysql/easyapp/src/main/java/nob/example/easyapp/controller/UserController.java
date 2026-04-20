@@ -42,7 +42,7 @@ public class UserController {
     FetchUserResponse fetch(FetchUserRequest request) {
 
         FetchUserOutModel outModel = userService.fetch(new FetchUserInModel(request.id()));
-        return new FetchUserResponse(outModel.id(), outModel.name(), outModel.password());
+        return new FetchUserResponse(outModel.id(), outModel.name(), outModel.age());
     }
 
     /**
@@ -55,6 +55,6 @@ public class UserController {
     RegistUserResponse regist(@RequestBody RegistUserRequest request) {
 
         return new RegistUserResponse(
-                userService.regist(new RegistUserInModel(request.name(), request.password())).id());
+                userService.regist(new RegistUserInModel(request.name(), request.age())).id());
     }
 }

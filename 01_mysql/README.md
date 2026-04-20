@@ -6,10 +6,10 @@ MySQLに直接データを投入します。
 
 ```shell
 # ユーザ登録
-curl -X POST -H 'Content-Type: application/json' -d '{"name": "nob", "password": "passwd"}' localhost:8081/api/v1/user
+curl -X POST -H 'Content-Type: application/json' -d '{"name": "nob", "age": 13}' localhost:8081/api/v1/user
 
 # ユーザ検索
-curl -X GET localhost:8081/api/v1/user?id=4f02318a-173a-45db-bd3e-08c682617f2e
+curl -X GET localhost:8081/api/v1/user?id=98030cdf-0c95-41fe-82a8-c8c6827c66b8
 ```
 
 ## データベース

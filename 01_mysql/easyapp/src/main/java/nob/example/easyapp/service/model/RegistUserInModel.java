@@ -8,5 +8,5 @@ package nob.example.easyapp.service.model;
  * 
  * @author nob
  */
-public record RegistUserInModel(String name, String password) {
+public record RegistUserInModel(String name, Integer age) {
 }

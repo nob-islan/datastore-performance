@@ -16,13 +16,13 @@ public class UsersDynamicSqlSupport {
 
     public static final SqlColumn<String> id = users.id;
     public static final SqlColumn<String> name = users.name;
-    public static final SqlColumn<String> password = users.password;
+    public static final SqlColumn<Integer> age = users.age;
 
     public static final class Users extends SqlTable {
 
         public final SqlColumn<String> id = column("id", JDBCType.VARCHAR);
         public final SqlColumn<String> name = column("name", JDBCType.VARCHAR);
-        public final SqlColumn<String> password = column("password", JDBCType.VARCHAR);
+        public final SqlColumn<Integer> age = column("age", JDBCType.INTEGER);
 
         public Users() {
             super("users");

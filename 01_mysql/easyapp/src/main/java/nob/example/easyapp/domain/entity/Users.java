@@ -20,6 +20,6 @@ public class Users {
     /** ユーザ名 */
     private String name;
 
-    /** パスワード */
-    private String password;
+    /** 年齢 */
+    private Integer age;
 }

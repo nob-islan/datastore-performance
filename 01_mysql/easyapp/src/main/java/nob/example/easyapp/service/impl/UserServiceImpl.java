@@ -34,16 +34,16 @@ public class UserServiceImpl implements UserService {
 
         Optional<Users> optUsers = usersRepository.findById(inModel.id());
         if (optUsers.isEmpty()) {
-            return new FetchUserOutModel("", "John doe", "passwd");
+            return new FetchUserOutModel("", "John doe", 0);
         }
-        return new FetchUserOutModel(optUsers.get().getId(), optUsers.get().getName(), optUsers.get().getPassword());
+        return new FetchUserOutModel(optUsers.get().getId(), optUsers.get().getName(), optUsers.get().getAge());
     }
 
     @Override
     public RegistUserOutModel regist(RegistUserInModel inModel) {
 
         String id = UUID.randomUUID().toString();
-        usersRepository.save(new Users(id, inModel.name(), inModel.password()));
+        usersRepository.save(new Users(id, inModel.name(), inModel.age()));
 
         return new RegistUserOutModel(id);
     }
